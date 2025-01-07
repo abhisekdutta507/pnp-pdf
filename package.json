@@ -1,0 +1,26 @@
+{
+  "name": "pnp-pdf",
+  "version": "0.0.1",
+  "description": "Plug and play pdf files using pdf.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhisekdutta507/pnp-pdf.git"
+  },
+  "keywords": [
+    "pnp-pdf",
+    "pdf viewer",
+    "pdfjs",
+    "mozilla pdf viewer"
+  ],
+  "author": "abhisek507",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/abhisekdutta507/pnp-pdf/issues"
+  },
+  "homepage": "https://github.com/abhisekdutta507/pnp-pdf#readme"
+}
