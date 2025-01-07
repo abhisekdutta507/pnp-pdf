@@ -1,6 +1,6 @@
 {
   "name": "pnp-pdf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plug and play pdf files using pdf.js",
   "main": "index.js",
   "scripts": {
