@@ -95,6 +95,8 @@ import { ViewHistory } from "./view_history";
 
 const FORCE_PAGES_LOADED_TIMEOUT = 10000; // ms
 
+const IGNORE_CHANGING_DOCUMENT_TITLE = true;
+
 const ViewOnLoad = {
   UNKNOWN: -1,
   PREVIOUS: 0, // Default value.
@@ -949,7 +951,10 @@ const PDFViewerApplication = {
     }
     const editorIndicator =
       this._hasAnnotationEditors && !this.pdfRenderingQueue.printing;
-    document.title = `${editorIndicator ? "* " : ""}${title}`;
+
+    if (!IGNORE_CHANGING_DOCUMENT_TITLE) {
+      document.title = `${editorIndicator ? "* " : ""}${title}`;
+    }
   },
 
   get _docFilename() {
