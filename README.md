@@ -1,4 +1,4 @@
-# pnp-pdf v0.0.2
+# pnp-pdf v0.0.3
 
 Plug and play PDF files using pdf.js. One of the easiest way to render PDF files on browsers.
 
@@ -15,7 +15,7 @@ npm i -g npm
 Install the `pnp-pdf` library:
 
 ```bash
-npm i pnp-pdf@0.0.2
+npm i pnp-pdf@0.0.3
 ```
 
 ## Credits

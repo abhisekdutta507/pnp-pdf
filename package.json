@@ -1,26 +1,40 @@
 {
   "name": "pnp-pdf",
-  "version": "0.0.2",
-  "description": "Plug and play pdf files using pdf.js",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm run test"
+  "version": "0.0.3",
+  "main": "web/index.js",
+  "types": "types/web/index.d.ts",
+  "description": "Plug and play build of Mozilla's PDF.js library for React.js applications.",
+  "keywords": [
+    "pnp-pdf",
+    "Mozilla",
+    "pdf",
+    "pdf.js",
+    "React.js"
+  ],
+  "homepage": "https://github.com/abhisekdutta507/pnp-pdf#readme",
+  "bugs": {
+    "url": "https://github.com/abhisekdutta507/pnp-pdf/issues"
+  },
+  "license": "Apache-2.0",
+  "optionalDependencies": {
+    "@napi-rs/canvas": "^0.1.65"
+  },
+  "browser": {
+    "canvas": false,
+    "fs": false,
+    "http": false,
+    "https": false,
+    "url": false
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abhisekdutta507/pnp-pdf.git"
   },
-  "keywords": [
-    "pnp-pdf",
-    "pdf viewer",
-    "pdfjs",
-    "mozilla pdf viewer"
-  ],
-  "author": "abhisek507",
-  "license": "MIT",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/abhisekdutta507/pnp-pdf/issues"
+  "engines": {
+    "node": ">=18"
   },
-  "homepage": "https://github.com/abhisekdutta507/pnp-pdf#readme"
+  "scripts": {},
+  "dependencies": {
+    "react": "^18"
+  }
 }
