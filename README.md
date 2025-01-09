@@ -1,10 +1,8 @@
-# pnp-pdf v0.0.4
+# pnp-pdf
 
 Plug and play PDF files using pdf.js. One of the easiest way to render PDF files on browsers.
 
-## [Example A](https://github.com/abhisekdutta507/pnp-pdf-example)
-
-## Installation
+## Installation | [HTML example](https://github.com/abhisekdutta507/pnp-pdf-example) | [React.js example](https://bitbucket.org/abhisekdutta507/mozilla-display-pdf/src/master/)
 
 Install npm globally (ignore if already installed):
 
@@ -15,7 +13,7 @@ npm i -g npm
 Install the `pnp-pdf` library:
 
 ```bash
-npm i pnp-pdf@0.0.4
+npm i pnp-pdf
 ```
 
 ## Setup the pnp-pdf library on a JavaScript project
@@ -67,7 +65,7 @@ open(file);
 
 ```jsx
 "use client";
-import { PDFViewer } from "pnp-pdf";
+import { PDFViewer } from "pnp-pdf/web/react_pdf_viewer";
 
 const file = "https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf";
 
