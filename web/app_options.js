@@ -49,6 +49,8 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
   })();
 }
 
+export const StableWorkerSource = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
+
 const OptionKind = {
   BROWSER: 0x01,
   VIEWER: 0x02,

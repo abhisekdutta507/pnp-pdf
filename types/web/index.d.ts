@@ -1,11 +1,4 @@
-import { CSSProperties } from "react";
-
 export * from "./app_options";
-
-export const PDFViewer: ({ file, }: {
-  file: string;
-  style: CSSProperties;
-}) => JSX.Element;
 
 export function open(file: string) {}
 
