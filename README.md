@@ -61,24 +61,7 @@ open(file);
 
 ## Setup the pnp-pdf library on a React.js project
 
-**Step 1:** Import the `PDFViewer` JSX component
-
-```jsx
-"use client";
-import { PDFViewer } from "pnp-pdf/web/react_pdf_viewer";
-
-const file = "https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf";
-
-export default function ReactComponent() {
-  return (
-    <div className="relative w-screen h-screen">
-      <PDFViewer file={file} style={{}} />
-    </div>
-  );
-}
-```
-
-**Step 2:** Legacy projects which do not support external JSX imports, create the JSX component like [react_pdf_viewer](./web/react_pdf_viewer.jsx).
+**Step 1:** Let's create the JSX component like [react_pdf_viewer](./web/react_pdf_viewer.jsx). **And only take the JSX.**
 
 ```jsx
 /* eslint-disable jsx-a11y/aria-role */
@@ -115,7 +98,7 @@ export const PDFViewer = ({
 export default PDFViewer;
 ```
 
-**Step 3:** Use the JSX component in your project
+**Step 2:** Use the JSX component in your project
 
 ```jsx
 import { PDFViewer } from "./react_pdf_viewer";

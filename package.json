@@ -1,6 +1,6 @@
 {
   "name": "pnp-pdf",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "main": "plugin/index.js",
   "types": "plugin/index.d.mts",
   "type": "module",
