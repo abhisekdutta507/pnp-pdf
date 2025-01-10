@@ -38,7 +38,7 @@ import {
   SidebarView,
   SpreadMode,
   TextLayerMode,
-} from "./ui_utils";
+} from "./ui_utils.js";
 import {
   AnnotationEditorType,
   build,
@@ -57,41 +57,41 @@ import {
   TouchManager,
   UnexpectedResponseException,
   version,
-} from "../build/pdf.mjs";
-import { AppOptions, OptionKind } from "./app_options";
-import { EventBus, FirefoxEventBus } from "./event_utils";
-import { ExternalServices, initCom, MLManager } from "./genericcom";
+} from "../pdfjs/pdf.mjs";
+import { AppOptions, OptionKind } from "./app_options.js";
+import { EventBus, FirefoxEventBus } from "./event_utils.js";
+import { ExternalServices, initCom, MLManager } from "./genericcom.js";
 import {
   ImageAltTextSettings,
   NewAltTextManager,
-} from "./new_alt_text_manager";
+} from "./new_alt_text_manager.js";
 import { LinkTarget, PDFLinkService } from './pdf_viewer.mjs';
-import { AltTextManager } from "./alt_text_manager";
-import { AnnotationEditorParams } from "./annotation_editor_params";
-import { CaretBrowsingMode } from "./caret_browsing";
+import { AltTextManager } from "./alt_text_manager.js";
+import { AnnotationEditorParams } from "./annotation_editor_params.js";
+import { CaretBrowsingMode } from "./caret_browsing.js";
 import { DownloadManager } from "./pdf_viewer.mjs";
-import { EditorUndoBar } from "./editor_undo_bar";
-import { OverlayManager } from "./overlay_manager";
-import { PasswordPrompt } from "./password_prompt";
-import { PDFAttachmentViewer } from "./pdf_attachment_viewer";
-import { PDFCursorTools } from "./pdf_cursor_tools";
-import { PDFDocumentProperties } from "./pdf_document_properties";
-import { PDFFindBar } from "./pdf_find_bar";
-import { PDFFindController } from "./pdf_find_controller";
-import { PDFHistory } from "./pdf_history";
-import { PDFLayerViewer } from "./pdf_layer_viewer";
-import { PDFOutlineViewer } from "./pdf_outline_viewer";
-import { PDFPresentationMode } from "./pdf_presentation_mode";
-import { PDFPrintServiceFactory } from "./pdf_print_service";
-import { PDFRenderingQueue } from "./pdf_rendering_queue";
-import { PDFScriptingManager } from "./pdf_scripting_manager";
-import { PDFSidebar } from "./pdf_sidebar";
-import { PDFThumbnailViewer } from "./pdf_thumbnail_viewer";
+import { EditorUndoBar } from "./editor_undo_bar.js";
+import { OverlayManager } from "./overlay_manager.js";
+import { PasswordPrompt } from "./password_prompt.js";
+import { PDFAttachmentViewer } from "./pdf_attachment_viewer.js";
+import { PDFCursorTools } from "./pdf_cursor_tools.js";
+import { PDFDocumentProperties } from "./pdf_document_properties.js";
+import { PDFFindBar } from "./pdf_find_bar.js";
+import { PDFFindController } from "./pdf_find_controller.js";
+import { PDFHistory } from "./pdf_history.js";
+import { PDFLayerViewer } from "./pdf_layer_viewer.js";
+import { PDFOutlineViewer } from "./pdf_outline_viewer.js";
+import { PDFPresentationMode } from "./pdf_presentation_mode.js";
+import { PDFPrintServiceFactory } from "./pdf_print_service.js";
+import { PDFRenderingQueue } from "./pdf_rendering_queue.js";
+import { PDFScriptingManager } from "./pdf_scripting_manager.js";
+import { PDFSidebar } from "./pdf_sidebar.js";
+import { PDFThumbnailViewer } from "./pdf_thumbnail_viewer.js";
 import { PDFViewer } from "./pdf_viewer.mjs";
-import { Preferences } from "./genericcom";
-import { SecondaryToolbar } from "./secondary_toolbar";
-import { Toolbar } from "./toolbar";
-import { ViewHistory } from "./view_history";
+import { Preferences } from "./genericcom.js";
+import { SecondaryToolbar } from "./secondary_toolbar.js";
+import { Toolbar } from "./toolbar.js";
+import { ViewHistory } from "./view_history.js";
 
 const FORCE_PAGES_LOADED_TIMEOUT = 10000; // ms
 
@@ -297,7 +297,7 @@ const PDFViewerApplication = {
         GlobalWorkerOptions.workerSrc ||= AppOptions.get("workerSrc");
 
         if (typeof PDFJSDev === "undefined") {
-          globalThis.pdfjsWorker = await import("../build/pdf.worker.mjs");
+          globalThis.pdfjsWorker = await import("../pdfjs/pdf.worker.mjs");
         } else {
           await __non_webpack_import__(PDFWorker.workerSrc);
         }

@@ -21,8 +21,8 @@ import {
   PresentationModeState,
   ScrollMode,
   SpreadMode,
-} from "./ui_utils";
-import { AnnotationEditorType } from "../build/pdf.mjs";
+} from "./ui_utils.js";
+import { AnnotationEditorType } from "../pdfjs/pdf.mjs";
 
 const DELAY_BEFORE_HIDING_CONTROLS = 3000; // in ms
 const ACTIVE_SELECTOR = "pdfPresentationMode";

@@ -15,8 +15,8 @@
 
 /** @typedef {import("./event_utils").EventBus} EventBus */
 
-import { apiPageLayoutToViewerModes, RenderingStates } from "./ui_utils";
-import { shadow } from "../build/pdf.mjs";
+import { apiPageLayoutToViewerModes, RenderingStates } from "./ui_utils.js";
+import { shadow } from "../pdfjs/pdf.mjs";
 
 /**
  * @typedef {Object} PDFScriptingManagerOptions

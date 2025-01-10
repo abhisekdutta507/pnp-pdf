@@ -16,7 +16,7 @@
 /** @typedef {import("./event_utils").EventBus} EventBus */
 /** @typedef {import("./interfaces").IPDFLinkService} IPDFLinkService */
 
-import { parseQueryString } from "./ui_utils";
+import { parseQueryString } from "./ui_utils.js";
 
 const DEFAULT_LINK_REL = "noopener noreferrer nofollow";
 

@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { DOMSVGFactory } from "../build/pdf.mjs";
+import { DOMSVGFactory } from "../pdfjs/pdf.mjs";
 
 class AltTextManager {
   #clickAC = null;

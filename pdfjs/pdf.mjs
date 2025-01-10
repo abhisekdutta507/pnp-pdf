@@ -12226,6 +12226,9 @@ class LoopbackPort {
     this.#listeners.clear();
   }
 }
+
+const StableWorkerSource = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
+
 class PDFWorker {
   static #fakeWorkerId = 0;
   static #isWorkerDisabled = false;
@@ -12233,7 +12236,7 @@ class PDFWorker {
   static {
     if (isNodeJS) {
       this.#isWorkerDisabled = true;
-      GlobalWorkerOptions.workerSrc ||= "./pdf.worker.mjs";
+      GlobalWorkerOptions.workerSrc ||= StableWorkerSource;
     }
     this._isSameOrigin = (baseUrl, otherUrl) => {
       let base;

@@ -1,5 +1,5 @@
-import { AppOptions, StableWorkerSource } from "./app_options";
-import { open, getVC } from "./file_handler";
+import { AppOptions, StableWorkerSource } from "./app_options.js";
+import { open, getVC } from "./file_handler.js";
 
 AppOptions.set("workerSrc", StableWorkerSource);
 

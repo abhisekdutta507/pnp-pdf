@@ -26,8 +26,8 @@ import {
   RenderingStates,
   scrollIntoView,
   watchScroll,
-} from "./ui_utils";
-import { PDFThumbnailView, TempImageFactory } from "./pdf_thumbnail_view";
+} from "./ui_utils.js";
+import { PDFThumbnailView, TempImageFactory } from "./pdf_thumbnail_view.js";
 
 const THUMBNAIL_SCROLL_MARGIN = -19;
 const THUMBNAIL_SELECTED_CLASS = "selected";

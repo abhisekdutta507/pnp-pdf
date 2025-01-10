@@ -13,9 +13,9 @@
  * limitations under the License.
  */
 
-import { getXfaPageViewport, PixelsPerInch } from "../build/pdf.mjs";
-import { SimpleLinkService } from "./pdf_link_service";
-import { XfaLayerBuilder } from "./xfa_layer_builder";
+import { getXfaPageViewport, PixelsPerInch } from "../pdfjs/pdf.mjs";
+import { SimpleLinkService } from "./pdf_link_service.js";
+import { XfaLayerBuilder } from "./xfa_layer_builder.js";
 
 function getXfaHtmlForPrinting(printContainer, pdfDocument) {
   const xfaHtml = pdfDocument.allXfaHtml;
