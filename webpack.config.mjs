@@ -28,13 +28,13 @@ export default {
     extensions: ['.js', '.jsx', '.mjs'],
   },
   optimization: {
-    minimize: true,
-    usedExports: false,
+    minimize: false,
+    usedExports: true,
     minimizer: [
       new TerserPlugin({
         terserOptions: {
-          mangle: false, // Doesn't change the variable and function names
-          keep_fnames: true, // Preserve function names
+          mangle: true,
+          keep_fnames: false,
         },
       }),
     ],

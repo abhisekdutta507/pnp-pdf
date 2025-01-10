@@ -1,4 +1,7 @@
-export const getVC = () => {
+import { AppOptions } from "./app_options.js";
+import { PDFViewerApplication } from "./app.js";
+
+const getVC = () => {
   return {
     appContainer: document.body,
     principalContainer: document.getElementById("mainContainer"),
@@ -198,7 +201,7 @@ export const getVC = () => {
 /**
  * @param {string} file 
 */
-export const open = (file) => {
+export function open(file) {
  const config = getVC();
 
  if (typeof PDFJSDev !== "undefined") {

@@ -46,7 +46,7 @@ npm i pnp-pdf
 **Step 2:** Import the styles
 
 ```css
-@import 'pnp-pdf/web/styles.css';
+@import 'pnp-pdf/plugin/styles.css';
 ```
 
 **Step 3:** Open the file on browser
@@ -88,7 +88,7 @@ export default function ReactComponent() {
 
 import { useEffect } from "react";
 import { open } from 'pnp-pdf';
-import "pnp-pdf/web/styles.css";
+import "pnp-pdf/plugin/styles.css";
 
 /**
  * @param {{
