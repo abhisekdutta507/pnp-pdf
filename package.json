@@ -1,8 +1,8 @@
 {
   "name": "pnp-pdf",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "plugin/index.js",
-  "types": "plugin/types.d.ts",
+  "types": "plugin/index.d.mts",
   "type": "module",
   "description": "Plug and play build of Mozilla's PDF.js library for React.js applications.",
   "keywords": [
