@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { removeNullCharacters } from "./ui_utils";
+import { removeNullCharacters } from "./ui_utils.js";
 
 const TREEITEM_OFFSET_TOP = -100; // px
 const TREEITEM_SELECTED_CLASS = "selected";

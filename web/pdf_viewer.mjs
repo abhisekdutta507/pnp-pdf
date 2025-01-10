@@ -44,7 +44,7 @@ import {
   VerbosityLevel,
   version,
   XfaLayer
-} from "../build/pdf.mjs";
+} from "../pdfjs/pdf.mjs";
 
 /**
  * @licstart The following is the entire license notice for the
@@ -4417,7 +4417,7 @@ const defaultOptions = {
     kind: OptionKind.WORKER
   },
   workerSrc: {
-    value: "../build/pdf.worker.mjs",
+    value: "../pdfjs/pdf.worker.mjs",
     kind: OptionKind.WORKER
   }
 };
@@ -4427,7 +4427,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER
   };
   defaultOptions.sandboxBundleSrc = {
-    value: "../build/pdf.sandbox.mjs",
+    value: "../pdfjs/pdf.sandbox.mjs",
     kind: OptionKind.VIEWER
   };
   defaultOptions.viewerCssTheme = {

@@ -15,14 +15,14 @@
 
 /** @typedef {import("./event_utils.js").EventBus} EventBus */
 
-import { AnnotationEditorType, ColorPicker, noContextMenu } from "../build/pdf.mjs";
+import { AnnotationEditorType, ColorPicker, noContextMenu } from "../pdfjs/pdf.mjs";
 import {
   DEFAULT_SCALE,
   DEFAULT_SCALE_VALUE,
   MAX_SCALE,
   MIN_SCALE,
   toggleExpandedBtn,
-} from "./ui_utils";
+} from "./ui_utils.js";
 
 /**
  * @typedef {Object} ToolbarOptions

@@ -1,0 +1,12 @@
+dist
+build
+cmaps
+image_decoders
+legacy
+node_modules
+pdfjs
+standard_fonts
+types
+web
+package-lock.json
+webpack.config.mjs

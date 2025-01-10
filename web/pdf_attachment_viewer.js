@@ -17,8 +17,8 @@
 // eslint-disable-next-line max-len
 /** @typedef {import("./download_manager.js").DownloadManager} DownloadManager */
 
-import { BaseTreeViewer } from "./base_tree_viewer";
-import { waitOnEventOrTimeout } from "./event_utils";
+import { BaseTreeViewer } from "./base_tree_viewer.js";
+import { waitOnEventOrTimeout } from "./event_utils.js";
 
 /**
  * @typedef {Object} PDFAttachmentViewerOptions

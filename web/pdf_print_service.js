@@ -21,8 +21,8 @@ import {
   PixelsPerInch,
   RenderingCancelledException,
   shadow,
-} from "../build/pdf.mjs";
-import { getXfaHtmlForPrinting } from "./print_utils";
+} from "../pdfjs/pdf.mjs";
+import { getXfaHtmlForPrinting } from "./print_utils.js";
 
 let activeService = null;
 let dialog = null;

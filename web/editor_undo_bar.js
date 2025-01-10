@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { noContextMenu } from "../build/pdf.mjs";
+import { noContextMenu } from "../pdfjs/pdf.mjs";
 
 class EditorUndoBar {
   #closeButton = null;

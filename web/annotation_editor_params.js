@@ -15,7 +15,7 @@
 
 /** @typedef {import("./event_utils.js").EventBus} EventBus */
 
-import { AnnotationEditorParamsType } from "../build/pdf.mjs";
+import { AnnotationEditorParamsType } from "../pdfjs/pdf.mjs";
 
 /**
  * @typedef {Object} AnnotationEditorParamsOptions
